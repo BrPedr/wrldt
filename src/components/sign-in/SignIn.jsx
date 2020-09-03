@@ -12,7 +12,7 @@ const SignIn = () => {
     <div id="form-sign-in">
       <div className="signin-register">
         <h3>Do not have an account?</h3>
-        <Link to="/join" className="join a-form">
+        <Link to="/wrldt/join" className="join a-form">
           Register now
         </Link>
       </div>
@@ -21,7 +21,7 @@ const SignIn = () => {
         <Input id="email" className="box" value="E-mail" />
         <Input id="password" className="box" value="Password" />
         <Link
-          to="#"
+          to="/wrldt"
           className="forgot-password a-form"
           onClick={() => alert("This functionality wasn't implemented yet.")}
         >

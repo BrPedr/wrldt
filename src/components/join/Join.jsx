@@ -13,7 +13,7 @@ const Join = () => {
       <div className="join-register">
         <h3>Have an account?</h3>
         <Link
-          to="/sign-in"
+          to="/wrldt/sign-in"
           className="join a-form"
           style={{ textDecoration: "none" }}
         >
@@ -29,18 +29,18 @@ const Join = () => {
         <Input id="phone" className="box" />
         <Input id="category" className="box category" />
         <Input id="bio" className="box bio" />
-      <h6>
-        By creating a WORLDART account you agree to our <br />
-        <Link className="a-form" href="/about">
-          Terms of Service
-        </Link>
-        &nbsp;&nbsp;&nbsp;and
-        <Link className="a-form" href="about">
-          &nbsp;&nbsp;&nbsp;Privace Policy
-        </Link>
-        .
-      </h6>
-      <Button buttonText="Register"></Button>
+        <h6>
+          By creating a WORLDART account you agree to our <br />
+          <Link className="a-form" to="/wrldt/about">
+            Terms of Service
+          </Link>
+          &nbsp;&nbsp;&nbsp;and
+          <Link className="a-form" to="/wrldt/about">
+            &nbsp;&nbsp;&nbsp;Privace Policy
+          </Link>
+          .
+        </h6>
+        <Button buttonText="Register"></Button>
       </Form>
     </div>
   );

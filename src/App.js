@@ -20,12 +20,12 @@ const App = () => {
       <Header />
       <NavMobile />
       <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/join" component={JoinPage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/sign-in" component={SignInPage} />
-        <Route path="/shop" component={ShopPage} />
-        <Route path="/cart" component={CartPage} />
+        <Route path="/wrldt" exact component={Homepage} />
+        <Route path="/wrldt/join" component={JoinPage} />
+        <Route path="/wrldt/about" component={AboutPage} />
+        <Route path="/wrldt/sign-in" component={SignInPage} />
+        <Route path="/wrldt/shop" component={ShopPage} />
+        <Route path="/wrldt/cart" component={CartPage} />
       </Switch>
     </div>
   );

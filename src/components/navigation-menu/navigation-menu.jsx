@@ -15,13 +15,13 @@ const NavigationMenu = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/wrldt/about">about</Link>
           </li>
           <li>
-            <Link to="/artists">artists</Link>
+            <Link to="/wrldt/artists">artists</Link>
           </li>
           <li>
-            <Link to="/contact">contact</Link>
+            <Link to="/wrldt/contact">contact</Link>
           </li>
           {/* <li>
             <Link to="/shop">shop</Link>
@@ -31,9 +31,9 @@ const NavigationMenu = () => {
       <nav className="nav-profile">
         <i className="search icon large"></i>
         <Link to="/cart">
-              <i className="shopping cart icon large link"></i>
+          <i className="shopping cart icon large link"></i>
         </Link>
-        <Link to="/sign-in">
+        <Link to="/wrldt/sign-in">
           <i className="user icon large link "></i>
         </Link>
       </nav>

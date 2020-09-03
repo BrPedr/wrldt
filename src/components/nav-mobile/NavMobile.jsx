@@ -10,14 +10,14 @@ const NavMobile = () => {
         <li>
           <Switch>
             <Route>
-              <Link to="/">products</Link>
+              <Link to="/wrldt">products</Link>
             </Route>
           </Switch>
         </li>
         <li>
           <Switch>
             <Route>
-              <Link to="/artists">artists</Link>
+              <Link to="/wrldt/artists">artists</Link>
             </Route>
           </Switch>
         </li>
