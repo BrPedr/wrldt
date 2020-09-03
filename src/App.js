@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
 import JoinPage from "./pages/join-page/JoinPage";
@@ -17,18 +17,16 @@ const App = () => {
   return (
     <div className="Container">
       <Banner imageUrl="https://i.pinimg.com/564x/91/a6/23/91a6233ced3799f85ed93326af0f238e.jpg" />
-      <BrowserRouter>
-        <Switch>
-          <Header />
-          <NavMobile />
-          <Route path="/" exact component={Homepage} />
-          <Route path="/join" component={JoinPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/sign-in" component={SignInPage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/cart" component={CartPage} />
-        </Switch>
-      </BrowserRouter>
+      <Header />
+      <NavMobile />
+      <Switch>
+        <Route path="/" exact component={Homepage} />
+        <Route path="/join" component={JoinPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/sign-in" component={SignInPage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route path="/cart" component={CartPage} />
+      </Switch>
     </div>
   );
 };
