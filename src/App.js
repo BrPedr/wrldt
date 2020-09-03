@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
 import JoinPage from "./pages/join-page/JoinPage";
@@ -19,14 +19,12 @@ const App = () => {
       <Banner imageUrl="https://i.pinimg.com/564x/91/a6/23/91a6233ced3799f85ed93326af0f238e.jpg" />
       <Header />
       <NavMobile />
-      <Switch>
-        <Route path="/wrldt" exact component={Homepage} />
-        <Route path="/wrldt/join" component={JoinPage} />
-        <Route path="/wrldt/about" component={AboutPage} />
-        <Route path="/wrldt/sign-in" component={SignInPage} />
-        <Route path="/wrldt/shop" component={ShopPage} />
-        <Route path="/wrldt/cart" component={CartPage} />
-      </Switch>
+      <Route path="/" exact component={Homepage} />
+      <Route path="/join" component={JoinPage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/sign-in" component={SignInPage} />
+      <Route path="/shop" component={ShopPage} />
+      <Route path="/cart" component={CartPage} />
     </div>
   );
 };
