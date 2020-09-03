@@ -1,0 +1,19 @@
+.nav-mobile {
+    display: grid;
+    text-align: center;
+    grid-area: menuMobile;
+    justify-content: center;
+    margin-top: 35px;
+    margin-right: 3.5em;
+  }
+
+  .nav-mobile-container {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+  }
+
+  .nav-mobile-container > li {
+    margin: auto 25px;
+    font-weight: 600;
+  }

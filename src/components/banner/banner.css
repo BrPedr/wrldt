@@ -1,0 +1,9 @@
+aside > img {
+  position: fixed;
+  padding: 0 20px;
+  width: 480px;
+  min-height: 100%;
+  object-fit: cover;
+  left: -140px;
+  z-index: -1;
+}

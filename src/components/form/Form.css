@@ -1,0 +1,23 @@
+
+
+.a-form {
+  color: blue;
+  font-size: 0.9em;
+}
+
+.box {
+  min-width: 15vw;
+  min-height: 4.5vh;
+  background-color: rgb(240, 240, 240);
+  color: grey;
+  border: none;
+}
+
+.box:hover{
+  background-color: rgb(230, 230, 230);
+  color: rgb(97, 97, 97);
+}
+
+.box[value] {
+  padding-left: 10px;
+}

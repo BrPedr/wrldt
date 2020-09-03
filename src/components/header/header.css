@@ -1,0 +1,14 @@
+.title {
+  padding: 30px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 3rem;
+  position: fixed;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+  height: 10rem;
+}

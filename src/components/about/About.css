@@ -1,0 +1,19 @@
+h2 {
+  margin-left: 60px;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+main {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+}
+
+p {
+  margin-left: 60px;
+  width: 400px;
+  text-align: justify;
+}
