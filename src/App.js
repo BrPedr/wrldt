@@ -20,7 +20,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <NavMobile />
-        <Route path="/" exact component={Homepage} />
+        <Route path="/*" exact component={Homepage} />
         <Route path="/join" component={JoinPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/sign-in" component={SignInPage} />
