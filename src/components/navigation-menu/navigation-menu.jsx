@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Link} from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 import "./navigation-menu.css";
 
@@ -10,18 +10,26 @@ const NavigationMenu = () => {
       <nav className="nav-menu">
         <ul className="nav-menu">
           <li>
-            <Link className="navJoin" to="/join">
-              join
-            </Link>
+            <Route>
+              <Link className="navJoin" to="/join">
+                join
+              </Link>
+            </Route>
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Route>
+              <Link to="/about">about</Link>
+            </Route>
           </li>
           <li>
-            <Link to="/artists">artists</Link>
+            <Route>
+              <Link to="/artists">artists</Link>
+            </Route>
           </li>
           <li>
-            <Link to="/contact">contact</Link>
+            <Route>
+              <Link to="/contact">contact</Link>
+            </Route>
           </li>
           {/* <li>
             <Link to="/shop">shop</Link>
@@ -30,12 +38,16 @@ const NavigationMenu = () => {
       </nav>
       <nav className="nav-profile">
         <i className="search icon large"></i>
-        <Link to="/cart">
-              <i className="shopping cart icon large link"></i>
-        </Link>
-        <Link to="/sign-in">
-          <i className="user icon large link "></i>
-        </Link>
+        <Route>
+          <Link to="/cart">
+            <i className="shopping cart icon large link"></i>
+          </Link>
+        </Route>
+        <Route>
+          <Link to="/sign-in">
+            <i className="user icon large link "></i>
+          </Link>
+        </Route>
       </nav>
     </div>
   );
