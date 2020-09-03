@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, Route, Switch } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import "./navigation-menu.css";
 
@@ -10,34 +10,18 @@ const NavigationMenu = () => {
       <nav className="nav-menu">
         <ul className="nav-menu">
           <li>
-            <Switch>
-              <Route>
-                <Link className="navJoin" to="/join">
-                  join
-                </Link>
-              </Route>
-            </Switch>
+            <Link className="navJoin" to="/join">
+              join
+            </Link>
           </li>
           <li>
-            <Switch>
-              <Route>
-                <Link to="/about">about</Link>
-              </Route>
-            </Switch>
+            <Link to="/about">about</Link>
           </li>
           <li>
-            <Switch>
-              <Route>
-                <Link to="/artists">artists</Link>
-              </Route>
-            </Switch>
+            <Link to="/artists">artists</Link>
           </li>
           <li>
-            <Switch>
-              <Route>
-                <Link to="/contact">contact</Link>
-              </Route>
-            </Switch>
+            <Link to="/contact">contact</Link>
           </li>
           {/* <li>
             <Link to="/shop">shop</Link>
@@ -46,20 +30,12 @@ const NavigationMenu = () => {
       </nav>
       <nav className="nav-profile">
         <i className="search icon large"></i>
-        <Switch>
-          <Route>
-            <Link to="/cart">
+        <Link to="/cart">
               <i className="shopping cart icon large link"></i>
-            </Link>
-          </Route>
-        </Switch>
-        <Switch>
-          <Route>
-            <Link to="/sign-in">
-              <i className="user icon large link "></i>
-            </Link>
-          </Route>
-        </Switch>
+        </Link>
+        <Link to="/sign-in">
+          <i className="user icon large link "></i>
+        </Link>
       </nav>
     </div>
   );
