@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Switch } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 import NavigationMenu from "../navigation-menu/navigation-menu";
 import "./header.css";
@@ -7,14 +7,14 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="header-container">
-      <Switch>
+      <Route>
         <Link to="/">
           <h1 className="title">
             World <br />
             art
           </h1>
         </Link>
-      </Switch>
+      </Route>
       <NavigationMenu />
     </div>
   );

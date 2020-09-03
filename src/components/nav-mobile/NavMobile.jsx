@@ -1,23 +1,25 @@
-import React from 'react';
-import {Link, Switch} from "react-router-dom"
+import React from "react";
+import { Link, Route } from "react-router-dom";
 
-import './NavMobile.css'
+import "./NavMobile.css";
 
 const NavMobile = () => {
-    return (
-      <nav className="nav-mobile">
-        <ul className="nav-mobile-container">
-          <li>
-            <Switch>
-              <Link to="/">products</Link>
-            </Switch>
-          </li>
-          <li>
+  return (
+    <nav className="nav-mobile">
+      <ul className="nav-mobile-container">
+        <li>
+          <Route>
+            <Link to="/">products</Link>
+          </Route>
+        </li>
+        <li>
+          <Route>
             <Link to="/artists">artists</Link>
-          </li>
-        </ul>
-      </nav>
-    );
-}
- 
+          </Route>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
 export default NavMobile;

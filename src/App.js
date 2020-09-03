@@ -17,11 +17,10 @@ const App = () => {
   return (
     <div className="Container">
       <Banner imageUrl="https://i.pinimg.com/564x/91/a6/23/91a6233ced3799f85ed93326af0f238e.jpg" />
+      <Header />
+      <NavMobile />
       <Switch>
-        <Header />
-        <NavMobile />
-        <Redirect exact from="/" to="/home" />
-        <Route path="/home" exact component={Homepage} />
+        <Route path="/" exact component={Homepage} />
         <Route path="/join" component={JoinPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/sign-in" component={SignInPage} />
