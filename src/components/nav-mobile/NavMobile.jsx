@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom"
+import {Link, Switch} from "react-router-dom"
 
 import './NavMobile.css'
 
@@ -8,7 +8,9 @@ const NavMobile = () => {
       <nav className="nav-mobile">
         <ul className="nav-mobile-container">
           <li>
-            <Link to="/">products</Link>
+            <Switch>
+              <Link to="/">products</Link>
+            </Switch>
           </li>
           <li>
             <Link to="/artists">artists</Link>
