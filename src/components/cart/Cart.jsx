@@ -1,23 +1,58 @@
 import React from "react";
 
+import ContentfulClient from "../../api/contentful";
+
 import "./Cart.css";
 
 class Cart extends React.Component {
   state = {
-  products: this.props.state
-  }
-  
+    imageId: window.location.pathname.substr(6),
+    productsData: [],
+    renderImage: [],
+  };
+
+  cart = new ContentfulClient();
+
   componentDidMount() {
-    this.setState({products: this.state.props})
+    this.cart.getProducts().then((products) => {
+      this.setState({ productsData: products });
+    });
+  }
+
+  renderImage() {
+    const x = this.state.productsData.filter(
+      (productId) => productId.id === this.state.imageId
+    );
+    console.log(x);
+
+    return x.map((product) => {
+      return (
+        // <div>
+        <img src={product.image} alt="" />
+        /* <div className="product-information">
+            <h2 className="product-name information-el">{product.title}</h2>
+            <h3 className="author information-el">By Jonas Heart</h3>
+            <h3 className="value information-el">
+              <b>For:</b> {product.price}
+            </h3>
+          </div>
+        </div> */
+      );
+    });
   }
 
   render() {
-    console.log(this.state.products);
+    // console.log(window.location)
+    // console.log(this.state);
+
+    // console.log(
+    //   this.state.productsData.filter(
+    //     (productId) => productId.id === this.state.imageId
+    //   )
+    // );
     return (
       <main>
-        <div className="product-container">
-          <img className="product" src="" alt="" id="" />
-        </div>
+        <div className="product-container">{this.renderImage()}</div>
         <div className="product-information">
           <h2 className="product-name information-el">Astronaut</h2>
           <h3 className="author information-el">By Jonas Heart</h3>

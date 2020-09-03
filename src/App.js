@@ -24,7 +24,7 @@ const App = () => {
       <Route path="/about" component={AboutPage} />
       <Route path="/sign-in" component={SignInPage} />
       <Route path="/shop" component={ShopPage} />
-      <Route path="/cart" component={CartPage} />
+      <Route path="/cart/:id" component={CartPage} />
     </div>
   );
 };
