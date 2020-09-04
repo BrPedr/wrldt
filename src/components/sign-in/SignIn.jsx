@@ -23,7 +23,7 @@ const SignIn = () => {
         <Link
           to="/"
           className="forgot-password a-form"
-          onClick={() => alert("This functionality wasn't implemented yet.")}
+          onClick={() => alert("This functionality isn't implemented yet.")}
         >
           Forgot your password?
         </Link>

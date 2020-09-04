@@ -31,10 +31,10 @@ const NavigationMenu = () => {
       <nav className="nav-profile">
         <i className="search icon large"></i>
         <Link to="/cart">
-          <i className="shopping cart icon large link"></i>
+          <i className="shopping cart icon large link" />
         </Link>
         <Link to="/sign-in">
-          <i className="user icon large link "></i>
+          <i className="user icon large link " />
         </Link>
       </nav>
     </div>

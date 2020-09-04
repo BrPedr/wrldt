@@ -13,7 +13,7 @@ const Join = () => {
       <div className="join-register">
         <h3>Have an account?</h3>
         <Link
-          to="/wrldt/sign-in"
+          to="/sign-in"
           className="join a-form"
           style={{ textDecoration: "none" }}
         >

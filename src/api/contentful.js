@@ -11,6 +11,7 @@ class ContentfulClient {
       let contentful = await client.getEntries({
         content_type: "photography",
       });
+      console.log(contentful)
 
       let products = contentful.items;
       products = products.map((item) => {

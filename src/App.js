@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Homepage from "./pages/homepage/Homepage";
 import JoinPage from "./pages/join-page/JoinPage";
@@ -19,12 +19,33 @@ const App = () => {
       <Banner imageUrl="https://i.pinimg.com/564x/91/a6/23/91a6233ced3799f85ed93326af0f238e.jpg" />
       <Header />
       <NavMobile />
-      <Route path="/" exact component={Homepage} />
-      <Route path="/join" component={JoinPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/sign-in" component={SignInPage} />
-      <Route path="/shop" component={ShopPage} />
-      <Route path="/cart/:id" component={CartPage} />
+      <Switch>
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/"
+          exact
+          component={Homepage}
+        />
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/join"
+          component={JoinPage}
+        />
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/about"
+          component={AboutPage}
+        />
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/sign-in"
+          component={SignInPage}
+        />
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/shop"
+          component={ShopPage}
+        />
+        <Route
+          path="https:/hardcore-ride-e4bab4.netlify.app/cart/:id"
+          component={CartPage}
+        />
+      </Switch>
     </div>
   );
 };
