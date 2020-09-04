@@ -23,7 +23,7 @@ class Cart extends React.Component {
     const x = this.state.productsData.filter(
       (productId) => productId.id === this.state.imageId
     );
-    console.log(x);
+    console.log(window.location.hash);
 
     return x.map((product) => {
       return (
