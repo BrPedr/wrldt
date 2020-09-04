@@ -20,31 +20,12 @@ const App = () => {
       <Header />
       <NavMobile />
       <Switch>
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/"
-          exact
-          component={Homepage}
-        />
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/join"
-          component={JoinPage}
-        />
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/about"
-          component={AboutPage}
-        />
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/sign-in"
-          component={SignInPage}
-        />
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/shop"
-          component={ShopPage}
-        />
-        <Route
-          path="https:/hardcore-ride-e4bab4.netlify.app/cart/:id"
-          component={CartPage}
-        />
+        <Route path="/" exact component={Homepage} />
+        <Route path="/join" component={JoinPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/sign-in" component={SignInPage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route path="/cart/:id" component={CartPage} />
       </Switch>
     </div>
   );
