@@ -42,6 +42,7 @@ class Cart extends React.Component {
   }
 
   render() {
+      console.log(this.state.imageId);
     // console.log(window.location)
     // console.log(this.state);
 
