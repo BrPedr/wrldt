@@ -20,7 +20,8 @@ const App = () => {
         <Banner imageUrl="https://i.pinimg.com/564x/91/a6/23/91a6233ced3799f85ed93326af0f238e.jpg" />
         <Header />
         <NavMobile />
-          <Route path="/" exact component={Homepage} />
+        <Homepage/>
+          {/* <Route path="/" exact component={Homepage} /> */}
           <Route path="/join" component={JoinPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/sign-in" component={SignInPage} />
